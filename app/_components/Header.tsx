@@ -1,9 +1,9 @@
-import { GithubIcon } from "@/components/icons/githubIcon"
+import { GithubIcon } from "@/app/_components/icons/githubIcon"
 import { Section } from "./Section"
-import { buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/app/_components/ui/button"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
-import { LinkedinIcon } from "@/components/icons/linkedinIcon"
+import { LinkedinIcon } from "@/app/_components/icons/linkedinIcon"
 
 export const Header = () => {
   return (
@@ -18,14 +18,14 @@ export const Header = () => {
             href="https://github.com/vanessa-berardozzi"
           className={cn(buttonVariants({variant: "outline"}),"size-6 p-0") } 
           >
-            <GithubIcon size={12} className="text-foreground" />
+            <GithubIcon size={24} className="text-foreground" />
           </Link>
 
           <Link 
             href="https://linkedin.com/vanessa-berardozzi"
           className={cn(buttonVariants({variant: "outline"}),"size-6 p-0") } 
           >
-            <LinkedinIcon size={20} className="text-foreground" />
+            <LinkedinIcon size={24} className="text-foreground" />
           </Link>
         </ul>
       </Section>

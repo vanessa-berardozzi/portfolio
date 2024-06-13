@@ -3,8 +3,8 @@ import { ComponentPropsWithoutRef } from "react";
 export const GithubIcon = (props: ComponentPropsWithoutRef<'svg'> & {size?: number}) => {
   return (
     <svg
-      width="{props.size}"
-      height="{props.size}"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 250"
       version="1.1"
       preserveAspectRatio="xMidYMid"
