@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { Code, FileQuestion, Home, LucideIcon } from 'lucide-react';
+import { SIDE_PROJECTS, SideProjects } from './SideProjects';
+import { WORKS, Work } from './Works';
 
 import { Card } from '@/components/ui/card';
-import Link from 'next/link';
+import { ContactCard } from './ContactCards';
 import React from 'react';
 import { Section } from './Section';
 
@@ -39,102 +40,19 @@ export const Status = () => {
 					</div>
 				</Card>
 				<Card
-					className='p-4'
+					className='p-4 flex-1 flex flex-col gap-2'
 					flex-1
 				>
-					Contact me
+					<p className='text-lg  text-muted-foreground'>Contact </p>
+					<ContactCard
+						image='https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE'
+						mediumImage='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png'
+						name='Vanessa-berardozzi'
+						description=''
+					/>
 				</Card>
 			</div>
 		</Section>
 	);
 };
 
-// Side projects data
-const SIDE_PROJECTS: SideProjectsProps[] = [
-	{
-		Logo: FileQuestion,
-		title: 'Game Quiz API',
-		description: 'Quiz app fun and easy to use',
-		url: '/',
-	},
-	{
-		Logo: Code,
-		title: 'Game Quiz API',
-		description: 'Quiz app fun and easy to use',
-		url: '/',
-	},
-];
-
-type SideProjectsProps = {
-	Logo: LucideIcon;
-	title: string;
-	description: string;
-	url: string;
-};
-
-const SideProjects = (props: SideProjectsProps) => {
-	return (
-		<Link
-			href={props.url}
-			className='inline-flex items-center gap-4 hover:bg-accent/50 transtion-colors p-2 rounded'
-		>
-			<props.Logo size={16} />
-			<div>
-				<p className='text-lg font-semibold'>{props.title}</p>
-				<p className='text-sm  text-muted-foreground'>{props.description} </p>
-			</div>
-		</Link>
-	);
-};
-
-// Work data
-
-//TODO : Add work experience
-const WORKS: WorkProps[] = [
-	{
-		image: '/images/nextjs.svg',
-		title: 'Next.js',
-		role: 'Frontend Developer',
-		date: '2021 - Present',
-		url: '/',
-	},
-	{
-		image: '/images/nextjs.svg',
-		title: 'Next.js',
-		role: 'Frontend Developer',
-		date: '2021 - Present',
-		url: '/',
-	},
-];
-
-type WorkProps = {
-	image: string;
-	title: string;
-	role: string;
-	date: string;
-	url: string;
-};
-
-const Work = (props: WorkProps) => {
-	return (
-		<Link
-			href={props.url}
-			className='inline-flex items-center gap-4 hover:bg-accent/50 transtion-colors p-2 rounded'
-		>
-			<img
-				src={props.image}
-				alt={props.title}
-				className='w-10 h-10 object-contain rounded-md '
-			/>
-
-			<div className='mr-auto'>
-				<p className='text-lg font-semibold'>{props.title}</p>
-				<p className='text-xs  text-muted-foreground'>{props.role} </p>
-			</div>
-
-			<div className=''>
-				<p className='text-xs text-end text-muted-foreground'>{props.date} </p>
-			</div>
-		</Link>
-	);
-};

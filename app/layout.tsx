@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Lato} from "next/font/google";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 
+import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
+import { Lato } from "next/font/google";
+import type { Metadata } from "next";
+import { cn } from "@/lib/utils";
 
 const lato = Lato ({
   subsets: ["latin"],
@@ -13,8 +13,8 @@ const lato = Lato ({
 });
 
 export const metadata: Metadata = {
-  title: "Vanessa Berardozzi's portfolio", 
-  description: "Back-end developer ",
+  title: "Vanessa Berardozzi's portfolio",
+  description: "Back-end developper ",
 };
 
 export default function RootLayout({
@@ -28,10 +28,10 @@ export default function RootLayout({
         cn(
           GeistSans.variable, lato.variable,GeistMono.variable, 'font-sans h-full bg-background text-foreground' 
         )
-      }> 
+      }>
         {children}
       </body>
 
     </html>
   );
-} 
+}
