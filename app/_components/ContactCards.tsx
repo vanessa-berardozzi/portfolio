@@ -22,7 +22,7 @@ export const ContactCard = (props: ContactCardProps) => {
 						src={props.image}
 						alt={props.name}
 						className='w-10 h-10 rounded-full object-contain'
-					/>
+					/> 
 					<img
 						src={props.mediumImage}
 						alt={props.name}

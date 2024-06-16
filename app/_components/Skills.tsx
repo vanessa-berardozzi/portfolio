@@ -59,7 +59,7 @@ export const Skills = () => {
 						Je code en{' '}
 						<Code className='inline-flex items-center gap-1'>
 							TypeScript
-							<NodeIcon size={14} />
+							<TypescriptIcon size={14} />
 						</Code>{' '}
 						pour améliorer la lisibilité de mon code et réduire les erreurs.
 					</p>
