@@ -1,6 +1,5 @@
-import { Code, FileQuestion, LucideIcon } from 'lucide-react';
-
-import Link from 'next/link';
+import Link from "next/link";
+import { LucideIcon } from 'lucide-react';
 
 export type SideProjectsProps = {
 	Logo: LucideIcon;
@@ -8,7 +7,6 @@ export type SideProjectsProps = {
 	description: string;
 	url: string;
 };
-
 export const SideProjects = (props: SideProjectsProps) => {
 	return (
 		<Link
@@ -22,18 +20,4 @@ export const SideProjects = (props: SideProjectsProps) => {
 			</div>
 		</Link>
 	);
-};
-export const SIDE_PROJECTS: SideProjectsProps[] = [
-	{
-		Logo: FileQuestion,
-		title: 'Game Quiz API',
-		description: 'Quiz app fun and easy to use',
-		url: '/',
-	},
-	{
-		Logo: Code,
-		title: 'Game Quiz API',
-		description: 'Quiz app fun and easy to use',
-		url: '/',
-	},
-];
+}

@@ -22,7 +22,7 @@ export const Header = () => {
           </Link>
 
           <Link
-            href="https://linkedin.com/vanessa-berardozzi"
+            href="https://linkedin.com/in/vanessa-berardozzi"
           className={cn(buttonVariants({variant: "outline"}),"size-6 p-0") }
           >
             <LinkedinIcon size={24} className="text-foreground" />

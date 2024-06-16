@@ -3,25 +3,6 @@
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
-export const WORKS: WorkProps[] = [
-	{
-		image:
-			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
-		title: 'Next.js',
-		role: 'Frontend Developer',
-		date: '2021 - Present',
-		url: '/',
-	},
-	{
-		image:
-			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
-		title: 'Next.js',
-		role: 'Frontend Developer',
-		date: '2021 - Present',
-		url: '/',
-		freelance: true,
-	},
-];
 export type WorkProps = {
 	image: string;
 	title: string;

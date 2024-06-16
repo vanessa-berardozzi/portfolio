@@ -1,15 +1,21 @@
 import { ArrowUpRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import Link from 'next/link';
 
 /* eslint-disable @next/next/no-img-element */
-export const ContactCard = (props: {
+
+
+export type ContactCardProps = {
 	image: string;
 	mediumImage: string;
 	name: string;
 	description: string;
-	url?: string;
-}) => {
+	url: string;
+};
+export const ContactCard = (props: ContactCardProps) => {
 	return (
+		<Link
+		href = {props.url} >
 			<Card className='p-3 bg-accent/10 hover:bg-accent/30 transition-colors group  flex items-center gap-4  '>
 				<div className='relative'>
 					<img
@@ -35,6 +41,7 @@ export const ContactCard = (props: {
 					size={16}
 				/>
 			</Card>
+		</Link>
 
 	);
 };

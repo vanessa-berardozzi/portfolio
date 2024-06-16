@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { SIDE_PROJECTS, SideProjects } from './SideProjects';
-import { WORKS, Work } from './Works';
 
 import { Card } from '@/components/ui/card';
 import { ContactCard } from './ContactCards';
 import React from 'react';
 import { Section } from './Section';
+import { SideProjects, type SideProjectsProps } from './SideProjects';
+import { Code, FileQuestion } from 'lucide-react';
+import { Work, type WorkProps } from './Works';
+
+
 
 export const Status = () => {
 	return (
@@ -49,6 +52,7 @@ export const Status = () => {
 						mediumImage='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png'
 						name='Vanessa-berardozzi'
 						description=''
+						url='https://www.linkedin.com/in/vanessa-berardozzi/'
 					/>
 				</Card>
 			</div>
@@ -56,3 +60,58 @@ export const Status = () => {
 	);
 };
 
+//TODO : Add work experience
+const WORKS: WorkProps[] = [
+	{
+		image:
+			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
+		title: 'Next.js',
+		role: 'Frontend Developer',
+		date: '2021 - Present',
+		url: '/',
+	},
+	{
+		image:
+			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
+		title: 'Next.js',
+		role: 'Frontend Developer',
+		date: '2021 - Present',
+		url: '/',
+		freelance: true,
+	},
+];
+
+const SIDE_PROJECTS: SideProjectsProps[] = [
+	{
+		Logo: Code,
+		title: 'Next.js',
+		description: 'Frontend Developer',
+		url: '/',
+	},
+	{
+		Logo: FileQuestion,
+		title: 'Next.js',
+		description: 'Frontend Developer',
+		url: '/',
+	},
+];
+
+const CONTACTS = [
+	{
+		url: 'https://www.linkedin.com/in/vanessa-berardozzi/',
+		image:
+			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
+		mediumImage:
+			'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png',
+		name: 'Vanessa-berardozzi',
+		description: '',
+	},
+	{
+		url: 'mailto:ness.berardozzi@gmail.com',
+		image:
+			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
+		mediumImage:
+			'https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI',
+		name: "bla"
+	},
+];
