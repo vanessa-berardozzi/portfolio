@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { LucideIcon } from 'lucide-react';
 
-export type SideProjectsProps = {
+export type ProjectsProps = {
 	Logo: LucideIcon;
 	title: string;
 	description: string;
 	url: string;
 };
-export const SideProjects = (props: SideProjectsProps) => {
+export const Projects = (props: ProjectsProps) => {
 	return (
 		<Link
 			href={props.url}

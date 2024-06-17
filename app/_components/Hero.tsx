@@ -21,7 +21,7 @@ export const Hero = () => {
         <h2 className="font-caption font-bold text-5xl text-primary "  >Vanessa Berardozzi</h2>
         <h3 className="text-3xl font-caption" >Back-End Developer </h3>
         <p  className="texte-base ">
-         I&apos;m a back-end developer with a passion for creating and improving web applications. See my work on {""}
+         Je  {""}
         <Link href=" https://github.com/vanessa-berardozzi ">
         <Code className="inline-flex items-center gap-1"> <GithubIcon size={16} className="inline"/> Github</Code> </Link>
          and connect with me on {""}
