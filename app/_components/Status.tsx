@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { ContactCard } from './ContactCards';
 import React from 'react';
 import { Section } from './Section';
-import { SideProjects, type SideProjectsProps } from './SideProjects';
+import { Projects, type ProjectsProps } from './Projects';
 import { Code, FileQuestion } from 'lucide-react';
 import { Work, type WorkProps } from './Works';
 
@@ -16,10 +16,10 @@ export const Status = () => {
 		<Section className='flex max-md:flex-col items-start gap-4'>
 			<div className='flex-[3] w-full'>
 				<Card className='w-full p-4 flex flex-col gap-2'>
-					<p className='text-lg  text-muted-foreground'>Side projects </p>
+					<p className='text-lg  text-muted-foreground'>Mes projets </p>
 					<div className='flex flex-col gap-4'>
-						{SIDE_PROJECTS.map((project, index) => (
-							<SideProjects
+						{PROJECTS.map((project, index) => (
+							<Projects
 								key={index}
 								Logo={project.Logo}
 								title={project.title}
@@ -81,7 +81,7 @@ const WORKS: WorkProps[] = [
 	},
 ];
 
-const SIDE_PROJECTS: SideProjectsProps[] = [
+const PROJECTS: ProjectsProps[] = [
 	{
 		Logo: Code,
 		title: 'Next.js',
