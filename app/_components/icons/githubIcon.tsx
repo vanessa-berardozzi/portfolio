@@ -1,4 +1,6 @@
-import { ComponentPropsWithoutRef } from "react";
+import path from "path";
+import { ComponentPropsWithoutRef, type version } from "react";
+import type style from "styled-jsx/style";
 
 export const GithubIcon = (props: ComponentPropsWithoutRef<'svg'> & {size?: number}) => {
   return (
