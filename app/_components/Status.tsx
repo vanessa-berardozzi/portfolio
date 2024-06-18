@@ -6,10 +6,13 @@ import { ContactCard } from './ContactCards';
 import React from 'react';
 import { Section } from './Section';
 import { Projects, type ProjectsProps } from './Projects';
-import { Code, FileQuestion } from 'lucide-react';
+import { Code, FileQuestion, MusicIcon } from 'lucide-react';
 import { Work, type WorkProps } from './Works';
 
 
+import type { url } from 'inspector';
+import type image from 'next/image';
+import type { title } from 'process';
 
 export const Status = () => {
 	return (
@@ -21,10 +24,7 @@ export const Status = () => {
 						{PROJECTS.map((project, index) => (
 							<Projects
 								key={index}
-								Logo={project.Logo}
-								title={project.title}
-								description={project.description}
-								url='/'
+								{...project}
 							/>
 						))}
 					</div>
@@ -32,8 +32,8 @@ export const Status = () => {
 			</div>
 			<div className='flex-[2] w-full flex flex-col  gap-4 '>
 				<Card className='p-4 flex-1'>
-					<p className='text-lg  text-muted-foreground'>Work </p>
-					<div className='flex flex-col gap-4'>
+					<p className='text-lg  text-muted-foreground'>Expériences professionnelles </p>
+					<div className='flex flex-col gap-4' >
 						{WORKS.map((work, index) => (
 							<Work
 								key={index}
@@ -42,58 +42,65 @@ export const Status = () => {
 						))}
 					</div>
 				</Card>
-				<Card
-					className='p-4 flex-1 flex flex-col gap-2'
-					flex-1
-				>
-					<p className='text-lg  text-muted-foreground'>Contact </p>
-					<ContactCard
-						image='https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE'
-						mediumImage='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png'
-						name='Vanessa-berardozzi'
-						description=''
-						url='https://www.linkedin.com/in/vanessa-berardozzi/'
-					/>
-				</Card>
+
+				
+					{/*
+					<Card
+						className='p-4 flex-1 flex flex-col gap-2'
+						flex-1
+					>
+						<p className='text-lg  text-muted-foreground'>Contact </p>
+						<ContactCard
+							image='https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE'
+							mediumImage='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png'
+							name='Vanessa-berardozzi'
+							description=''
+							url='https://www.linkedin.com/in/vanessa-berardozzi/'
+						/>
+					</Card>
+					*/}
+					
 			</div>
 		</Section>
 	);
 };
 
-//TODO : Add work experience
 const WORKS: WorkProps[] = [
 	{
 		image:
-			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
-		title: 'Next.js',
-		role: 'Frontend Developer',
-		date: '2021 - Present',
-		url: '/',
+			'https://media.licdn.com/dms/image/C4E0BAQGCzzlB-E4l6A/company-logo_200_200/0/1642408026401/kairnial_logo?e=2147483647&v=beta&t=6ghIneZ8m3qRxazndOG32LdRjGPnNYxLgVjB26yRzaA',
+		title: 'Kairnial',
+		role: 'Stagiaire',
+		date: 'novembre 2023',
+		url: 'https://kairnial.com',
 	},
 	{
 		image:
 			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
-		title: 'Next.js',
-		role: 'Frontend Developer',
-		date: '2021 - Present',
+		title: 'Game-O-Quiz',
+		role: 'Back-Developer',
+		date: '2023',
 		url: '/',
-		freelance: true,
 	},
 ];
 
 const PROJECTS: ProjectsProps[] = [
-	{
-		Logo: Code,
-		title: 'Next.js',
-		description: 'Frontend Developer',
-		url: '/',
-	},
-	{
+
+{
 		Logo: FileQuestion,
-		title: 'Next.js',
+		title: 'Game-O-Quiz',
+		description: 'Back-End Developer',
+		url: 'https://quiz.berardozzi.fr/api-docs/',
+	},
+
+	{
+		Logo: MusicIcon,
+		title: 'Spotify Playlist ( comming soon ... )',
 		description: 'Frontend Developer',
 		url: '/',
 	},
+
+
 ];
 
 const CONTACTS = [

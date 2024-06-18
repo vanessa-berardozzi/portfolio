@@ -9,10 +9,9 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-xl border text-card-foreground shadow",
+      "rounded-xl border bg-card/25 text-card-foreground shadow",
       className
     )}
-    style={{ background: "var(--gradient)" }}
     {...props}
   />
 ))
@@ -75,3 +74,4 @@ const CardFooter = React.forwardRef<
 CardFooter.displayName = "CardFooter"
 
 export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+import { forwardRef, type HTMLAttributes } from "react"

@@ -25,7 +25,9 @@ const config = {
     },
     extend: {
       colors: {
-        gradient: "hsl(var(--gradient))" ,
+        'gradient-start': "256 37.5% 22.8%",
+        'gradient-end': "257, 27%, 45%",
+        gradient: "hsl(var(--gradient))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -59,6 +61,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        
       },
       borderRadius: {
         lg: "var(--radius)",

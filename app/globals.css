@@ -5,7 +5,16 @@
 @layer base {
   :root {
 
---gradient: linear-gradient(to bottom, hsl(256 37.5% 22.8%), hsl(256 37.5% 22.8));
+--gradient: linear-gradient(to bottom, hsl(256 37.5% 22.8%), hsl(256, 31%, 54%));
+  /*style= {
+      {
+      background: "var(--gradient)"
+    }
+  }
+
+  */
+  --text-gradient-start: 256 37.5% 22.8%;
+  --text-gradient-end: 256 31% 54%;
 
   --background: 256 48.75% 6.08%;
   --foreground: 256 7.5% 98.8%;
