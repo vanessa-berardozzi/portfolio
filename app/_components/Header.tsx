@@ -10,15 +10,13 @@ export const Header = () => {
 
     <header className="sticky top-0 py-4">
       <Section className="flex items-baseline">
-        <h1 className="text-lg font-bold text-primary">
-            vanessa-berardozzi.berardozzi.fr</h1>
         < div className="flex-1"/>
         <ul className="flex items-center gap-2 " >
           <Link
             href="https://github.com/vanessa-berardozzi"
-          className={cn(buttonVariants({variant: "outline"}),"size-6 p-0") }
+          className={cn(buttonVariants({variant: "ghost"}),"size-6 p-0 rounded-full") }
           >
-            <GithubIcon size={24} className="text-foreground" />
+            <GithubIcon size={24} className="text-foreground rounded-full" />
           </Link>
 
           <Link
