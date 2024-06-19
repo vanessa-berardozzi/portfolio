@@ -22,7 +22,7 @@ export const Hero = () => {
 					nouvelles choses et surtout trouver des solutions pour chaque projet.
 					Vous pouvez consulter mon travail sur{' '}
 					<Link href='https://github.com/vanessa-berardozzi'>
-						<Code className='inline-flex items-baseline gap-2 transition-transform  '>
+						<Code className='inline-flex items-baseline gap-2 hover:bg-accent '>
 							{' '}
 							<GithubIcon
 								size={16}
@@ -33,9 +33,9 @@ export const Hero = () => {
 					</Link>
 					et connectons nous sur{' '}
 					<Link href='https://www.linkedin.com/in/vanessa-berardozzi/'>
-						<Code className='inline-flex items-baseline gap-1'>
+						<Code className='inline-flex items-baseline gap-1 hover:bg-accent '>
 							{' '}
-							<LinkedinIcon size={16} /> Linkedin{' '}
+							<LinkedinIcon size={16}   /> Linkedin{' '}
 						</Code>
 					</Link>
 					.

@@ -25,6 +25,7 @@ const config = {
     },
     extend: {
       colors: {
+        violet : " hsl(256, 27%, 45%)",
         'gradient-start': "256 37.5% 22.8%",
         'gradient-end': "257, 27%, 45%",
         gradient: "hsl(var(--gradient))",
@@ -61,7 +62,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        
       },
       borderRadius: {
         lg: "var(--radius)",
