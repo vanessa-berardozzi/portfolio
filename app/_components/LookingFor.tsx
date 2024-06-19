@@ -7,7 +7,7 @@ export const LookingFor = () => {
     <Section className='flex max-md:flex-col justify-center items-center'>
       <div className='flex flex-col '></div>
 
-      <Card className='w-full p-2 flex flex-col gap-1 items-center'>
+      <Card className='w-full p-4 flex flex-col gap-1 items-center'>
         <div className='flex flex-col gap-3'>
           <h2 className='pb-2 text-3xl font-caption font-semibold tracking-tight first:mt-0 text-center'>
             Ma recherche
