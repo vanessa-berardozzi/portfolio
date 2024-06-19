@@ -1,7 +1,3 @@
-import { Badge } from '@/components/ui/badge';
-import { Card } from '@/components/ui/card';
-import { Code } from './Code';
-import { ContactCard } from './ContactCards';
 import { DockerIcon } from './icons/DockerIcon';
 import { MongoIcon } from './icons/MongoIcon';
 import { NodeIcon } from './icons/NodeIcon';
@@ -10,7 +6,6 @@ import { ReactIcon } from './icons/ReactIcon';
 import { Section } from './Section';
 import { TailwindIcon } from './icons/TailwindIcon';
 import { TypescriptIcon } from './icons/TypescriptIcon';
-import type style from 'styled-jsx/style';
 
 export const Skills = () => {
 	return (
