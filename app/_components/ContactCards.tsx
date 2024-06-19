@@ -20,7 +20,6 @@ export const ContactCard = (props: ContactCardProps) => {
 		<Link
 		href = {props.url} >
 			<Card className='p-3  transition-colors group  flex items-center gap-4  '
-			
 			>
 			 	<div className='relative'>
 					<img
@@ -42,7 +41,7 @@ export const ContactCard = (props: ContactCardProps) => {
 					<p className='text-sm  text-muted-foreground'>{props.description} </p>
 				</div>
 				<ArrowUpRight
-					className='group-hover:translate-x-2 mr-4 group-(-) '
+					className='group-hover:translate-x-2 mr-4 group-hover:-translate-y-2 transition-transform '
 					size={16}
 				/>
 			</Card>
