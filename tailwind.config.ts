@@ -25,7 +25,6 @@ const config = {
     },
     extend: {
       colors: {
-        violet : " hsl(256, 27%, 45%)",
         'gradient-start': "256 37.5% 22.8%",
         'gradient-end': "257, 27%, 45%",
         gradient: "hsl(var(--gradient))",
