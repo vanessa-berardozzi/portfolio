@@ -18,7 +18,9 @@ export type ContactCardProps = {
 export const ContactCard = (props: ContactCardProps) => {
 	return (
 		<Link
-		href = {props.url} >
+		href = {props.url}
+			target = "_blank" >
+		
 			<Card className='p-3  transition-colors group  flex items-center gap-4  '
 			>
 			 	<div className='relative'>

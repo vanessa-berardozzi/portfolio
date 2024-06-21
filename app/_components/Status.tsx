@@ -23,8 +23,8 @@ export const Status = () => {
 					</div>
 				</Card>
 			</div>
-			<div className='flex-[2] w-full flex flex-col  gap-4 '>
-				<Card className='p-4 flex-1'>
+			<div className='flex-[2] w-full flex flex-col gap-4 '>
+				<Card className='p-4 flex-1 '>
 					<p className='text-lg  text-muted-foreground'>
 						Expériences professionnelles{' '}
 					</p>
@@ -73,7 +73,7 @@ const WORKS: WorkProps[] = [
 		title: 'Game-O-Quiz',
 		role: 'Back-Developer',
 		date: '2023',
-		url: '/',
+		url: 'https://github.com/vanessa-berardozzi/projet-game-o-quiz-back',
 	},
 ];
 

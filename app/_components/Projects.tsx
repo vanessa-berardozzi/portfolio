@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { LucideIcon } from 'lucide-react';
+import { title } from "process";
+import { url } from "inspector";
 
 export type ProjectsProps = {
 	Logo: LucideIcon;
@@ -11,6 +13,7 @@ export const Projects = (props: ProjectsProps) => {
 	return (
 		<Link
 			href={props.url}
+			target="_blank"
 			className='inline-flex items-center gap-4 hover:bg-accent/50 transtion-colors p-2 rounded'
 		>
 			<props.Logo size={16} />

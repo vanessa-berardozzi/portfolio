@@ -30,7 +30,7 @@ export default function RootLayout({
           GeistSans.variable, lato.variable,GeistMono.variable, 'font-sans h-full bg-background text-foreground' 
         )
       }>
-        {children}
+         {children}
         <Analytics />
       </body>
 

@@ -21,7 +21,9 @@ export const Hero = () => {
 					Développeuse investie, passionnée et curieuse, j'aime apprendre de
 					nouvelles choses et surtout trouver des solutions pour chaque projet.
 					Vous pouvez consulter mon travail sur{' '}
-					<Link href='https://github.com/vanessa-berardozzi'>
+					<Link href='https://github.com/vanessa-berardozzi'
+					target="_blank"
+					>
 						<Code className='inline-flex items-baseline gap-2 hover:bg-accent '>
 							{' '}
 							<GithubIcon
@@ -32,10 +34,11 @@ export const Hero = () => {
 						</Code>{' '}
 					</Link>
 					et connectons nous sur{' '}
-					<Link href='https://www.linkedin.com/in/vanessa-berardozzi/'>
+					<Link href='https://www.linkedin.com/in/vanessa-berardozzi/'
+					target="_blank"
+					>
 						<Code className='inline-flex items-baseline gap-1 hover:bg-accent '>
-							{' '}
-							<LinkedinIcon size={16}   /> Linkedin{' '}
+							<LinkedinIcon size={16}   /> Linkedin
 						</Code>
 					</Link>
 					.
