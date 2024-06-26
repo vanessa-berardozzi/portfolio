@@ -16,13 +16,14 @@ export const Hero = () => {
 					{' '}
 					Vanessa Berardozzi
 				</h1>
-				<h2 className='text-4xl font-caption'> Développeuse Back-End </h2>
+				<h2 className='text-4xl font-caption'> Conceptrice développeuse d'applications </h2>
 				<p className='text-base mt-4'>
 					Développeuse investie, passionnée et curieuse, j'aime apprendre de
 					nouvelles choses et surtout trouver des solutions pour chaque projet.
 					Vous pouvez consulter mon travail sur{' '}
-					<Link href='https://github.com/vanessa-berardozzi'
-					target="_blank"
+					<Link
+						href='https://github.com/vanessa-berardozzi'
+						target='_blank'
 					>
 						<Code className='inline-flex items-baseline gap-2 hover:bg-accent '>
 							{' '}
@@ -33,12 +34,23 @@ export const Hero = () => {
 							Github{' '}
 						</Code>{' '}
 					</Link>
+					, mon parcours sur{' '}
+					<Link
+						href='https://cv.berardozzi.fr/cv.pdf/'
+						target='_blank'
+					>
+						<Code className='inline-flex items-baseline gap-2 hover:bg-accent '>
+							{' '}
+							mon CV{' '}
+						</Code>{' '}
+					</Link>
 					et connectons nous sur{' '}
-					<Link href='https://www.linkedin.com/in/vanessa-berardozzi/'
-					target="_blank"
+					<Link
+						href='https://www.linkedin.com/in/vanessa-berardozzi/'
+						target='_blank'
 					>
 						<Code className='inline-flex items-baseline gap-1 hover:bg-accent '>
-							<LinkedinIcon size={16}   /> Linkedin
+							<LinkedinIcon size={16} /> Linkedin
 						</Code>
 					</Link>
 					.

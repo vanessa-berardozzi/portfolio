@@ -10,7 +10,7 @@ import { TypescriptIcon } from './icons/TypescriptIcon';
 export const Skills = () => {
 	return (
 		<Section className='flex flex-col gap-4 items-center'>
-			<h2 className='font-caption pb-2 text-3xl font-semibold tracking-tight first:mt- '>
+			<h2 className='font-caption pb-2 text-3xl font-semibold tracking-tight first:mt -'>
 				Ma Stack
 			</h2>
 
