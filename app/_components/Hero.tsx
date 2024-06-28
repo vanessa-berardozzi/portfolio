@@ -59,7 +59,9 @@ export const Hero = () => {
 
 			<div className='flex-[1] max-md m-auto ml-auto'>
 				<img
-					src='https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_200_200/0/1569423474125?e=1723680000&v=beta&t=AuJUAOgPWikmHWr5qkRGyu26kDFXAXe4oYTmFHVB3IE'
+					src='https://media.licdn.com/dms/image/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_800_800/0/1719497356684?e=1724889600&v=beta&t=lgplW5vMLqGf2RrU0NJJ3lBvxC_tJCtp2Ioc2wWhwrA'
+					height={250}
+					width={250}
 					className='w-full h-auto max-w-ws ma-md:w-56 rounded-full shadow-[0_0_1px_#fff,inset_0_0_2px_#fff,0_0_2px_#fff,0_0_2px_#fff,0_0_12px_#fff] '
 					alt='Photo de Vanessa Berardozzi'
 				/>
