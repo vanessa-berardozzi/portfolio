@@ -1,5 +1,6 @@
 import { DockerIcon } from './icons/DockerIcon';
 import { MongoIcon } from './icons/MongoIcon';
+import { NextIcon } from './icons/NextIcon';
 import { NodeIcon } from './icons/NodeIcon';
 import { PostgreIcon } from './icons/PostgresIcon';
 import { ReactIcon } from './icons/ReactIcon';
@@ -36,6 +37,11 @@ export const Skills = () => {
 						<div className='flex items-center flex-col  gap-3 justify-center'>
 							<TailwindIcon size={42} />
 							<p className='text-xs'>Tailwind</p>
+						</div>
+
+						<div className='flex items-center flex-col  gap-3 justify-center'>
+							<NextIcon size={42} />
+							<p className='text-xs'>Next.js</p>
 						</div>
 					</div>
 				</div>

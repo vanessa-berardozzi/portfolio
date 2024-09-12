@@ -4,11 +4,12 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
 export type WorkProps = {
-	image: string;
+	image: string 
 	title: string;
 	role: string;
 	date: string;
 	url: string;
+
 	freelance?: boolean;
 };
 

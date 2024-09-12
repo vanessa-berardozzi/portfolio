@@ -1,4 +1,3 @@
-import { Badge } from '@/components/ui/badge';
 import { ContactCard } from './ContactCards';
 import { Section } from './Section';
 
@@ -12,7 +11,7 @@ export const Contact = () => {
 			<div className='flex max-md:flex-col gap-4 w-full justify-center'>
 				<ContactCard
 			url='https://www.linkedin.com/in/vanessa-berardozzi/'
-					image='https://media.licdn.com/dms/image/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_800_800/0/1719497356684?e=1724889600&v=beta&t=lgplW5vMLqGf2RrU0NJJ3lBvxC_tJCtp2Ioc2wWhwrA'
+					image='https://media.licdn.com/dms/image/v2/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719497356641?e=1731542400&v=beta&t=1SsK24RA6a6kpBZaIQ4DZfU6XLv6NT-Je7D_KDdD4EQ'
 					mediumImage={'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png'}
 					name='Vanessa-berardozzi'
 					description=''
@@ -20,7 +19,7 @@ export const Contact = () => {
 				<ContactCard
 			url='mailto:nessb.webdev@gmail.com '
 			name='nessb.webdev@gmail.com'
-			image='https://media.licdn.com/dms/image/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_800_800/0/1719497356684?e=1724889600&v=beta&t=lgplW5vMLqGf2RrU0NJJ3lBvxC_tJCtp2Ioc2wWhwrA'
+			image='https://media.licdn.com/dms/image/v2/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719497356641?e=1731542400&v=beta&t=1SsK24RA6a6kpBZaIQ4DZfU6XLv6NT-Je7D_KDdD4EQ'
 			mediumImage='https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI'
 			description=''
 

@@ -37,22 +37,6 @@ export const Status = () => {
 						))}
 					</div>
 				</Card>
-
-				{/*
-					<Card
-						className='p-4 flex-1 flex flex-col gap-2'
-						flex-1
-					>
-						<p className='text-lg  text-muted-foreground'>Contact </p>
-						<ContactCard
-							image='https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE'
-							mediumImage='https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png'
-							name='Vanessa-berardozzi'
-							description=''
-							url='https://www.linkedin.com/in/vanessa-berardozzi/'
-						/>
-					</Card>
-					*/}
 			</div>
 		</Section>
 	);
@@ -61,15 +45,15 @@ export const Status = () => {
 const WORKS: WorkProps[] = [
 	{
 		image:
-			'https://media.licdn.com/dms/image/C4E0BAQGCzzlB-E4l6A/company-logo_200_200/0/1642408026401/kairnial_logo?e=2147483647&v=beta&t=6ghIneZ8m3qRxazndOG32LdRjGPnNYxLgVjB26yRzaA',
-		title: 'Kairnial',
+			'https://media.licdn.com/dms/image/v2/D4E0BAQF4CBVYUiBOtA/company-logo_100_100/company-logo_100_100/0/1709891850889/thinkproject_group_logo?e=1733961600&v=beta&t=0cZHlYcFtk_gKrBb8POAKBbwT3qmt-bG5IXDZJHGhOc',
+		title: 'Thinkproject',
 		role: 'Stagiaire',
 		date: 'novembre 2023',
-		url: 'https://kairnial.com',
+		url: 'https://thinkproject.com',
 	},
 	{
-		image:
-			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
+
+		image:"https://media.istockphoto.com/id/1023347350/fr/photo/point-dinterrogation-3d-point-rouge-dinterrogation-demandant-signe-de-ponctuation-isol%C3%A9e.jpg?s=1024x1024&w=is&k=20&c=ZzyH2ismL2Ovs2mHO_g1O_llKtSkwpNfdTySYLi2_2c=",
 		title: 'Game-O-Quiz',
 		role: 'Back-Developer',
 		date: '2023',
@@ -97,7 +81,7 @@ const CONTACTS = [
 	{
 		url: 'https://www.linkedin.com/in/vanessa-berardozzi/',
 		image:
-			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
+			'https://media.licdn.com/dms/image/v2/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719497356641?e=1731542400&v=beta&t=1SsK24RA6a6kpBZaIQ4DZfU6XLv6NT-Je7D_KDdD4EQ',
 		mediumImage:
 			'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png',
 		name: 'Vanessa-berardozzi',
@@ -106,7 +90,7 @@ const CONTACTS = [
 	{
 		url: 'mailto:ness.berardozzi@gmail.com',
 		image:
-			'https://media.licdn.com/dms/image/C5603AQFHZV4aKgBRDg/profile-displayphoto-shrink_800_800/0/1569423474257?e=1723680000&v=beta&t=Dks0V7bDJzRhEIFomStGZo8uSCnKGG4cPz9S45UnERE',
+			'https://media.licdn.com/dms/image/v2/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719497356641?e=1731542400&v=beta&t=1SsK24RA6a6kpBZaIQ4DZfU6XLv6NT-Je7D_KDdD4EQ',
 		mediumImage:
 			'https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI',
 		name: 'bla',
