@@ -4,45 +4,47 @@ import { Card } from '@/components/ui/card';
 import React from 'react';
 import { Section } from './Section';
 import { Projects, type ProjectsProps } from './Projects';
-import { Code, FileQuestion, MusicIcon } from 'lucide-react';
+import { Code, FileQuestion, Leaf, MusicIcon } from 'lucide-react';
 import { Work, type WorkProps } from './Works';
 
 export const Status = () => {
 	return (
-		<Section className='flex max-md:flex-col items-start gap-4'>
-			<div className='flex-[3] w-full'>
-				<Card className='w-full p-4 flex flex-col gap-2'>
-					<p className='text-lg  text-muted-foreground'>Mes projets </p>
-					<div className='flex flex-col gap-4'>
-						{PROJECTS.map((project, index) => (
-							<Projects
-								key={index}
-								{...project}
-							/>
-						))}
-					</div>
-				</Card>
-			</div>
-			<div className='flex-[2] w-full flex flex-col gap-4 '>
-				<Card className='p-4 flex-1 '>
-					<p className='text-lg  text-muted-foreground'>
-						Expériences professionnelles{' '}
-					</p>
-					<div className='flex flex-col gap-4'>
-						{WORKS.map((work, index) => (
-							<Work
-								key={index}
-								{...work}
-							/>
-						))}
-					</div>
-				</Card>
-			</div>
-		</Section>
+		<Section className='flex max-md:flex-col items-stretch gap-4'>
+      <div className='flex-[3] w-full flex flex-col'>
+        <Card className='w-full p-4 flex flex-col gap-2 flex-1'>
+          <p className='text-lg text-muted-foreground'>Mes projets</p>
+          <div className='flex flex-col gap-4'>
+            {PROJECTS.map((project, index) => (
+              <Projects key={index} {...project} />
+            ))}
+          </div>
+        </Card>
+      </div>
+      <div className='flex-[2] w-full flex flex-col'>
+        <Card className='p-4 flex-1 flex flex-col'>
+          <p className='text-lg text-muted-foreground'>Expériences professionnelles</p>
+          <div className='flex flex-col gap-4'>
+            {WORKS.map((work, index) => (
+              <Work key={index} {...work} />
+            ))}
+          </div>
+        </Card>
+      </div>
+    </Section>
 	);
 };
 
 const WORKS: WorkProps[] = [
+
+	{
+		image:
+			'https://www.alteca.fr/wp-content/uploads/2020/10/alteca_footer-1.png',
+		title: 'Aleca',
+		role: 'Stagiaire',
+		date: 'novembre 2024',
+		url: 'https://www.alteca.fr/',
+	},
+	
 	{
 		image:
 			'https://media.licdn.com/dms/image/v2/D4E0BAQF4CBVYUiBOtA/company-logo_100_100/company-logo_100_100/0/1709891850889/thinkproject_group_logo?e=1733961600&v=beta&t=0cZHlYcFtk_gKrBb8POAKBbwT3qmt-bG5IXDZJHGhOc',
@@ -62,6 +64,14 @@ const WORKS: WorkProps[] = [
 ];
 
 const PROJECTS: ProjectsProps[] = [
+
+	
+	{
+		Logo: Leaf,
+		title: 'FourmisLabs',
+		description: 'Fullstack Developer',
+		url: 'https://fourmislabs.vercel.app/fr',
+	},
 	{
 		Logo: FileQuestion,
 		title: 'Game-O-Quiz',
@@ -75,6 +85,8 @@ const PROJECTS: ProjectsProps[] = [
 		description: 'Frontend Developer',
 		url: '/',
 	},
+
+
 ];
 
 const CONTACTS = [

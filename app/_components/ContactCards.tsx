@@ -1,9 +1,8 @@
 import { ArrowUpRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import Link from 'next/link';
-import image from 'next/image';
-import type style from 'styled-jsx/style';
-import { url } from 'inspector';
+
+
 
 /* eslint-disable @next/next/no-img-element */
 

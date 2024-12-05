@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { LucideIcon } from 'lucide-react';
-import { title } from "process";
-import { url } from "inspector";
+
 
 export type ProjectsProps = {
 	Logo: LucideIcon;
