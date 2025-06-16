@@ -18,7 +18,7 @@ export const LookingFor = () => {
                 apprentissage✨
               </span>
             </p>
-            <p className='mb-1'>⏱️Durée: entre 15 et 23 mois</p>
+            <p className='mb-1'>⏱️Durée et ryhtme: 12 mois - une semaine école , 2 semaines entreprise</p>
             <p className='mb-1'>
               📍 Localité : Région Lyonnaise, Rhône-Alpes , France entière
               possible selon opportunité

@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import React from 'react';
 import { Section } from './Section';
 import { Projects, type ProjectsProps } from './Projects';
-import { Code, FileQuestion, Leaf, MusicIcon } from 'lucide-react';
+import {  Cat, FileQuestion, Trophy } from 'lucide-react';
 import { Work, type WorkProps } from './Works';
 
 export const Status = () => {
@@ -37,9 +37,17 @@ export const Status = () => {
 const WORKS: WorkProps[] = [
 
 	{
+
+		image:"https://www.fourmislabs.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.6b9f00de.png&w=128&q=75",
+		title: 'FourmisLabs',
+		role: 'Full Stack Developer',
+		date: ' aout 2024 - mai 2025',
+		url: 'https://github.com/vanessa-berardozzi/projet-game-o-quiz-back',
+	},
+	{
 		image:
-			'https://www.alteca.fr/wp-content/uploads/2020/10/alteca_footer-1.png',
-		title: 'Aleca',
+			'https://media.licdn.com/dms/image/v2/D4E0BAQHNdtAE4wbNmA/company-logo_200_200/B4EZb7x1jsGQAM-/0/1747980868283/alteca_logo?e=1755734400&v=beta&t=gxHbh4WDqho_1_ff1CaoRo7z_VXX6kTr54lS7utqdn8', // Enlever "public" du chemin
+		title: 'Alteca',
 		role: 'Stagiaire',
 		date: 'novembre 2024',
 		url: 'https://www.alteca.fr/',
@@ -47,45 +55,37 @@ const WORKS: WorkProps[] = [
 	
 	{
 		image:
-			'https://media.licdn.com/dms/image/v2/D4E0BAQF4CBVYUiBOtA/company-logo_100_100/company-logo_100_100/0/1709891850889/thinkproject_group_logo?e=1733961600&v=beta&t=0cZHlYcFtk_gKrBb8POAKBbwT3qmt-bG5IXDZJHGhOc',
-		title: 'Thinkproject',
+			'https://media.licdn.com/dms/image/v2/D4E0BAQF4CBVYUiBOtA/company-logo_200_200/company-logo_200_200/0/1709891850889/thinkproject_group_logo?e=1755734400&v=beta&t=rxdc1FctXX_faibZ3UxMAQbUjsA-DD5y_oOckNUh3O8',
+		title: 'Kairnial (Thinkproject)',
 		role: 'Stagiaire',
 		date: 'novembre 2023',
-		url: 'https://thinkproject.com',
+		url: 'https://www.thinkproject.com/fr/products/thinkproject-kairnial/',
 	},
-	{
-
-		image:"https://media.istockphoto.com/id/1023347350/fr/photo/point-dinterrogation-3d-point-rouge-dinterrogation-demandant-signe-de-ponctuation-isol%C3%A9e.jpg?s=1024x1024&w=is&k=20&c=ZzyH2ismL2Ovs2mHO_g1O_llKtSkwpNfdTySYLi2_2c=",
-		title: 'Game-O-Quiz',
-		role: 'Back-Developer',
-		date: '2023',
-		url: 'https://github.com/vanessa-berardozzi/projet-game-o-quiz-back',
-	},
+	
 ];
 
 const PROJECTS: ProjectsProps[] = [
 
 	
 	{
-		Logo: Leaf,
-		title: 'FourmisLabs',
-		description: 'Fullstack Developer',
-		url: 'https://fourmislabs.vercel.app/fr',
+		Logo:  Trophy,
+		title: 'Tennis Count',
+		description: 'Back-End project',
+		url: 'https://tennis-count.berardozzi.fr',
+	},
+
+	{
+		Logo: Cat,
+		title: 'Cafe Neko',
+		description: 'React project',
+		url: 'https://cafe-neko.berardozzi.fr',
 	},
 	{
 		Logo: FileQuestion,
 		title: 'Game-O-Quiz',
-		description: 'Back-End Developer',
+		description: 'Node/Express.js project',
 		url: 'https://quiz.berardozzi.fr/api-docs/',
 	},
-
-	{
-		Logo: MusicIcon,
-		title: 'Spotify Playlist ( coming soon ... )',
-		description: 'Frontend Developer',
-		url: '/',
-	},
-
 
 ];
 
@@ -93,18 +93,19 @@ const CONTACTS = [
 	{
 		url: 'https://www.linkedin.com/in/vanessa-berardozzi/',
 		image:
-			'https://media.licdn.com/dms/image/v2/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719497356641?e=1731542400&v=beta&t=1SsK24RA6a6kpBZaIQ4DZfU6XLv6NT-Je7D_KDdD4EQ',
+			'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png',
 		mediumImage:
 			'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png',
 		name: 'Vanessa-berardozzi',
-		description: '',
+		description: 'vanessa berardozzi contact image linkedin',
 	},
 	{
 		url: 'mailto:ness.berardozzi@gmail.com',
 		image:
-			'https://media.licdn.com/dms/image/v2/D5603AQFI6NyTbI3G7Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719497356641?e=1731542400&v=beta&t=1SsK24RA6a6kpBZaIQ4DZfU6XLv6NT-Je7D_KDdD4EQ',
+			'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gmail_Logo.svg/240px-Gmail_Logo.svg.png',
 		mediumImage:
 			'https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI',
-		name: 'bla',
+		name: 'Vanessa Berardozzi',
+		description: 'vanessa berardozzi contact image gmail',
 	},
 ];

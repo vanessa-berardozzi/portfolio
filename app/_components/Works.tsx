@@ -32,7 +32,7 @@ export const Work = (props: WorkProps) => {
 					{props.freelance && <Badge variant='outline'>Freelance</Badge>}
 				</div>
 
-				<p className='text-xs  text-muted-foreground'>{props.role} </p>
+				<p className='text-xs  text-muted-foreground whitespace-nowrap'>{props.role} </p>
 			</div>
 
 			<p className='text-xs text-end text-muted-foreground'>{props.date} </p>
